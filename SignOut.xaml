@@ -125,7 +125,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SignOut" sap:VirtualizedContainerService.HintSize="594.6666666666666,2061.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SignOut" sap:VirtualizedContainerService.HintSize="594.6666666666666,1282" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="TestId" />
     </Sequence.Variables>
@@ -157,13 +157,13 @@
         </OutArgument>
       </ar:startTest.str_out_TestId>
     </ar:startTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Practice Software Testing - Toolshop - v" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1981.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="80bed156-d372-48e7-83a3-531205e53d41" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Practice Software Testing - Toolshop - v" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1202" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="80bed156-d372-48e7-83a3-531205e53d41" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1786.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1007.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -186,7 +186,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+            <ui:LogMessage DisplayName="Log Message for &quot;profile is clicked&quot;" sap:VirtualizedContainerService.HintSize="452,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"profile is clicked successfully"</CSharpValue>
@@ -210,7 +210,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+            <ui:LogMessage DisplayName="Log Message for &quot;sign out&quot;" sap:VirtualizedContainerService.HintSize="452,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"signed out successfully"</CSharpValue>
@@ -218,20 +218,20 @@
               </ui:LogMessage.Message>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <uix:NCheckState DisplayName="Check App State 'Sign in'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1358" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="80bed156-d372-48e7-83a3-531205e53d41" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Sign in'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,698" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="80bed156-d372-48e7-83a3-531205e53d41" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,507.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message for &quot;successful signed out&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"signed out successfully"</CSharpValue>
@@ -244,10 +244,10 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,382" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="User is signed out" str_in_expectedStep="User should be signed out" str_in_stepDescription="User is signed out" str_in_stepName="Sign Out">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="User is signed out" str_in_expectedStep="User should be signed out" str_in_stepDescription="User is signed out" str_in_stepName="Sign Out">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -265,13 +265,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,507.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message for &quot;sign out failed&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"signed out failed"</CSharpValue>
@@ -284,10 +284,10 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,382" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="User is not signed out" str_in_expectedStep="User should be signed out" str_in_stepDescription="User is not signed out" str_in_stepName="Sign Out">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="User is not signed out" str_in_expectedStep="User should be signed out" str_in_stepDescription="User is not signed out" str_in_stepName="Sign Out">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>

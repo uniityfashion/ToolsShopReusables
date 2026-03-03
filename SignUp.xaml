@@ -143,7 +143,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Sign_up" sap:VirtualizedContainerService.HintSize="689,7898" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sign_up" sap:VirtualizedContainerService.HintSize="594.6666666666666,2406.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="SignUpData" />
       <Variable x:TypeArguments="x:String" Name="FirstName" />
@@ -172,7 +172,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ar:startTest sap:VirtualizedContainerService.HintSize="488,279" sap2010:WorkflowViewState.IdRef="startTest_2" str_in_testName="signUp Test">
+    <ar:startTest sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="startTest_2" str_in_testName="signUp Test">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <ar:startTest.int_in_ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">ReportId</CSharpValue>
@@ -189,19 +195,25 @@
         </OutArgument>
       </ar:startTest.str_out_TestId>
     </ar:startTest>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="488,227" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1">
       <ui:ReadRange.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">SignUpData</CSharpReference>
         </OutArgument>
       </ui:ReadRange.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <ui:ReadRange.WorkbookPath>
         <InArgument x:TypeArguments="x:String">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">ExcelPath</CSharpValue>
         </InArgument>
       </ui:ReadRange.WorkbookPath>
     </ui:ReadRange>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="488,459" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -338,21 +350,27 @@
           </ui:AssignOperation>
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Practice Software Testing - Toolshop -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,6910" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Practice Software Testing - Toolshop -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,2212" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,6716" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2017.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayBefore="2" DisplayName="Click 'Sign in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,266" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayBefore="2" DisplayName="Click 'Sign in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com" CVScreenId="52ec6b49-a179-4dd8-92d1-9db15a39dea4" ContentHash="xZ_26NEv4kCa5MrXRJ_U9Q" CvTextArea="1123, 231, 50, 19" CvTextArgument="Sign in" CvType="Text" DesignTimeRectangle="1116, 219, 65, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Sign in' class='nav-link' parentid='navbarSupportedContent' tag='A' /&gt;" Guid="20760419-0079-498f-984c-78fe1fc1b02a" InformativeScreenshot="de3fc7d924fa92e1144895ea009fa35a.jpg" Reference="NdnDWv5lYU2XxRkubzPcng/Q5MC7RX9l06ZRKssQn_Pdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -369,8 +387,27 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register your account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,266" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;sign in clicked&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">"Sign in clicked"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register your account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/login" CVScreenId="bc205e86-98f6-4a58-9907-5fa5f5cff429" ContentHash="yS8lQTf2-UKholBdlZtPqw" CvTextArea="582, 687, 156, 19" CvTextArgument="Registeryour account" CvType="Text" DesignTimeRectangle="584, 684, 153, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Register your account' tag='A' /&gt;" Guid="d5dcd608-2329-477f-8550-c4249a5fd025" InformativeScreenshot="67032ad15e67acc4c989c370cbdfd0b8.jpg" Reference="NdnDWv5lYU2XxRkubzPcng/D1U3xrc9L0mU0WVER7F0xw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -387,21 +424,47 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'INPUT first_name'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1213" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Timeout="1" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;register your account&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">"register your account is clicked successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NCheckState DisplayName="Check App State 'INPUT first_name'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Timeout="1" Version="V5">
               <uix:NCheckState.Exists>
                 <OutArgument x:TypeArguments="x:Boolean">
                   <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">state_1</CSharpReference>
                 </OutArgument>
               </uix:NCheckState.Exists>
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="'Customer registration' text is displayed to user" str_in_expectedStep="'Customer registration' text should visible to user" str_in_stepDescription="Register page opened after clicking on 'Register your account'" str_in_stepName="Register page opened">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="'Customer registration' text is displayed to user" str_in_expectedStep="'Customer registration' text should visible to user" str_in_stepDescription="Register page opened after clicking on 'Register your account'" str_in_stepName="Register page opened">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">ReportId</CSharpValue>
@@ -413,16 +476,35 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Passed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">"passed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Register page didn't open" str_in_expectedStep="Register page shouldn't open" str_in_stepDescription="Failed to reach on register page" str_in_stepName="Register page">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Register page didn't open" str_in_expectedStep="Register page shouldn't open" str_in_stepDescription="Failed to reach on register page" str_in_stepName="Register page">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">ReportId</CSharpValue>
@@ -434,13 +516,32 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Failed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">"passed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="8d34e9c3-2638-4d54-bf8b-3541c26ddd25" DesignTimeRectangle="345, 443, 677, 34" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Customer registration' innertext='Customer registration' /&gt;" Guid="3e899b66-c6bb-4ed0-9631-4c79cf5fb900" InformativeScreenshot="adfbc0ec05117b6500064d0cfd30aa15.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'First name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'First name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="787b04ca-ceb3-4a7b-aea1-155cfa0b9b34" ContentHash="1LznrCQ-NEqw7kR0QIUSyg" CvElementArea="411, 261, 262, 41" CvType="InputBox" DesignTimeRectangle="413, 263, 259, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='first_name' tag='INPUT' type='text' class='form-control ng-pristine ng-invalid ng-touched' placeholder='First name *' aaname='First name' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="06f31292-3490-4644-ba84-5e5668645cfe" InformativeScreenshot="88b993bb860aa75bb1ed05923598d315.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/tCznn5jagUKCeqTNdX-RiA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -459,7 +560,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">FirstName</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">FirstName</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -470,8 +571,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Last name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;first name entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">"First name is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Last name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="bd2ed60e-5d76-4aad-b0c1-e3cb98a96e85" ContentHash="a5SQX8Mga0ug7r7hKMI1CA" CvElementArea="695, 361, 260, 41" CvType="InputBox" DesignTimeRectangle="696, 363, 258, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='last_name' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your last name *' aaname='Last name' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e064f731-350b-4013-9463-bc5f30ab5c8c" InformativeScreenshot="549f0816281a3c804b0e0ab620df93e1.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/YttSj18QiU2N63Ie9XLeSw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -490,7 +610,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">LastName</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">LastName</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -501,8 +621,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Date of Birth *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;last name entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">"Last name is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Date of Birth *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="8d675cc2-a2ff-43a0-a2e4-076ccdce4c83" ContentHash="MwZuMoog-Uuy9e0yc3UcYQ" CvElementArea="412, 448, 542, 40" CvType="InputBox" DesignTimeRectangle="413, 449, 541, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='dob' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='YYYY-MM-DD' aaname='Date of Birth *' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="8ff15356-6bc5-4135-90eb-08ef0c3ab0b6" InformativeScreenshot="e52fe3a9d117ef18e7c92f057cb00a1e.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/_ucTGXA4fEW8iAwiH8papw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -521,7 +660,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">DOB</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">DOB</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -532,8 +671,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Street'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;DOB entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">"Date of Birth is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Street'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="755b0b93-ae14-4fcf-b4fc-427f26ab8730" ContentHash="kf8G2lVRJEK4BYKnXNHFMg" CvElementArea="412, 534, 542, 40" CvType="InputBox" DesignTimeRectangle="413, 535, 541, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='street' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your Street *' aaname='Street' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="874a781d-3d63-4758-a768-566b605bac2e" InformativeScreenshot="2e1c6a4e6cfa4d30dfaa4092308c95c9.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/n7U7N2iCKkKTg7AyTnefzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -552,7 +710,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">Street</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">Street</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -563,8 +721,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Postal code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Street entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">"Street is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Postal code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="df0c7c64-80d2-4901-a428-4fb014f4007c" ContentHash="ZDBRevcaY0m_0wIcQ6POBw" CvElementArea="412, 619, 168, 41" CvType="InputBox" DesignTimeRectangle="413, 621, 164, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='postal_code' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your Postcode *' aaname='Postal code' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e2a65e8a-3509-4f3b-8268-849976f41eda" InformativeScreenshot="0d44df23f0643bb0bc6f003b83a38dde.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/C5fd0MGKgEiLujPNJqje7w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -583,7 +760,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">Postalcode</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">Postalcode</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -594,8 +771,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'City'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;postal code entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">"Postal code is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'City'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="176ceea9-f136-4742-8ae3-dbc95781ef66" ContentHash="oU3eV-yGTEi-0kIiBiNuHQ" CvElementArea="599, 620, 355, 40" CvType="InputBox" DesignTimeRectangle="601, 621, 353, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='city' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your City *' aaname='City' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="07de1e41-1cd8-4caf-a03c-ae2d32f5e779" InformativeScreenshot="f7e54d4f5ee46f726243bb99d984d481.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/y9eCs6J0g02OBZzfgZ93Og" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -614,7 +810,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">city</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">city</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -625,8 +821,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'State'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;city entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">"City is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'State'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="c743ea73-9fbd-4f9d-ae8b-b45f10aae21c" ContentHash="10FKKFrNI0CCDEemRE2iVA" CvElementArea="411, 506, 262, 41" CvType="InputBox" DesignTimeRectangle="413, 507, 259, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='state' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your State *' aaname='State' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0b73ff85-5d43-4090-9425-f352aa39755b" InformativeScreenshot="9cfdd09994c91a89c5d3c9dd0ea4bd9a.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/3RfGVCxfI0SlZuXAD-ZSYg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -645,7 +860,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">state</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">state</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -656,8 +871,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NSelectItem DisplayName="Select Item 'Country'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;state entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">"State is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NSelectItem DisplayName="Select Item 'Country'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NSelectItem.Item>
                 <InArgument x:TypeArguments="x:String">
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">country</CSharpValue>
@@ -726,8 +960,27 @@
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Phone'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Country selection&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">"Country is selected successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Phone'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="a9b50dec-ffdd-4b9b-9d5a-8f8a9dc4bc99" ContentHash="owHvVn8jZ0mBElQxFylNmg" CvElementArea="412, 392, 541, 40" CvType="InputBox" DesignTimeRectangle="413, 393, 541, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='phone' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your phone *' aaname='Phone' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b3b15494-124b-4310-b04e-5139830b757e" InformativeScreenshot="6670c1d10722e895f9482bfd2a3db4f1.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/wOubr2RaLUShuR20WCbTWQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -746,7 +999,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">phone</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">phone</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -757,8 +1010,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Email address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Phone number entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">"Phone number is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Email address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="fbd3c671-17de-4ce5-8b00-b11b946db6e7" ContentHash="TcFMKs9P30q3LvaOogZ1Fw" CvElementArea="411, 477, 544, 40" CvType="InputBox" DesignTimeRectangle="413, 479, 541, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Your email *' aaname='Email address' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:placeholder='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e7fd2b95-9a6b-47fa-bfc4-c48d0d654b42" InformativeScreenshot="b005a2d1923ad5fd83de8dfd9e7686f1.jpg" IsResponsive="True" Reference="0_a1KnUSU0-KYH9y1uL7mg/FRr5ylmPQUeVwemZLAF4Vw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -777,7 +1049,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">email</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">email</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -788,8 +1060,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,298" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Email entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">"Email is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="fbd3c671-17de-4ce5-8b00-b11b946db6e7" ContentHash="319TtHZt7EKWAD35CN4wMg" CvElementArea="414, 564, 497, 39" CvType="InputBox" DesignTimeRectangle="413, 565, 496, 38" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' placeholder='Your password' aaname='Password' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b0cda137-d937-441c-9b6f-f364d58de69a" InformativeScreenshot="29c127d41ca9bf6a322c6a70cbb4b680.jpg" Reference="0_a1KnUSU0-KYH9y1uL7mg/L0e4a-24KUKy2Vg0UmXHRQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -808,7 +1099,7 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String">password</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">password</CSharpValue>
                     </InArgument>
                   </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
                   <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -819,8 +1110,27 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,266" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Password entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">"Password is entered successsfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/register" CVScreenId="a910b776-62cc-4ed6-bae0-18b35f00ad93" ContentHash="5WiHhOAoD06Gxu2VAZAmDg" CvElementArea="398, 423, 287, 44" CvTextArea="511, 438, 62, 19" CvTextArgument="Register" CvType="Button" DesignTimeRectangle="401, 425, 283, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="c29b7df3-7045-4808-a428-5de52f965ffc" InformativeScreenshot="ecd5b4f15de5b50e11dd8a6001622729.jpg" Reference="NdnDWv5lYU2XxRkubzPcng/LgxaEjSvY0aq6z394w0z_A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Register - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -837,16 +1147,41 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'INPUT email'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1213" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Timeout="10" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Register button&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">"Register button is clicked successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NCheckState DisplayName="Check App State 'INPUT email'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Timeout="10" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,173.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="'Login'text is displayed" str_in_expectedStep="'Login' text should appear" str_in_stepDescription="Registration successful" str_in_stepName="Register">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="'Login'text is displayed" str_in_expectedStep="'Login' text should appear" str_in_stepDescription="Registration successful" str_in_stepName="Register">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">ReportId</CSharpValue>
@@ -858,16 +1193,35 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Passed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">"passed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_actualStep="'Login' text didn't appear" str_in_expectedStep="'Login' text should appear" str_in_stepDescription="Registration failed" str_in_stepName="Register">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_actualStep="'Login' text didn't appear" str_in_expectedStep="'Login' text should appear" str_in_stepDescription="Registration failed" str_in_stepName="Register">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">ReportId</CSharpValue>
@@ -879,13 +1233,32 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Failed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">"Failed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/auth/login" CVScreenId="4d2bf1c5-bd11-441f-95cf-4338e23306dc" CvTextArea="648, 442, 71, 31" CvTextArgument="Login" CvType="Text" DesignTimeRectangle="438, 437, 491, 34" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H3' aaname='Login' /&gt;" Guid="d43002b0-afb2-4246-8f56-7d76b9237a09" InformativeScreenshot="e0fe187f0a7dd64b3f5698bbf6e0b881.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,257" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="adaa56e9-a54a-4a08-b0f7-fd94f2ba0bf7" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/account" CVScreenId="bb72731b-527e-4fe9-b354-4f65c1b7210f" ContentHash="EYuEztOi6UCYZBX8OAuoKA" CvTextArea="809, 180, 44, 14" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="802, 167, 58, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='navbarSupportedContent' tag='A' /&gt;" Guid="eff2b989-1e4b-44ed-817b-9408fb6edeab" InformativeScreenshot="99493ad0517f2c676c93d6a95d32ef2f.jpg" Reference="NdnDWv5lYU2XxRkubzPcng/HlMXjBJ_eEyYrmmgokKWsw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Overview - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -902,7 +1275,26 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message for &quot;Home button&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">"Home button is clicked successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

@@ -4,6 +4,8 @@
   "description": "Blank Library",
   "main": "NewActivity.xaml",
   "dependencies": {
+    "atuipath_utilities": "1.0.7",
+    "UiPath.Excel.Activities": "3.4.1",
     "UiPath.System.Activities": "25.12.0-preview"
   },
   "webServices": [],

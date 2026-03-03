@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Payment" this:Payment.int_reportid="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Payment" this:Payment.int_reportid="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="int_reportid" Type="InArgument(x:Int32)" />
     <x:Property Name="Str_suiteID" Type="InArgument(x:String)" />
@@ -115,9 +115,10 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Payment" sap:VirtualizedContainerService.HintSize="961,3448" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Payment" sap:VirtualizedContainerService.HintSize="594.6666666666666,820" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_testID" />
     </Sequence.Variables>
@@ -126,7 +127,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Payment Method Test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Payment Method Test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">int_reportid</CSharpValue>
@@ -137,25 +138,31 @@
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Str_suiteID</CSharpValue>
         </InArgument>
       </ra:StartTest.SuiteId>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <ra:StartTest.testId>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">str_testID</CSharpReference>
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Checkout - Practice Software Testing -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,3307" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Checkout - Practice Software Testing -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,740" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,3113" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,545.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'Payment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Cash on Delivery" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Payment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Cash on Delivery" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="6">
                   <x:String>Choose your payment method</x:String>
@@ -175,16 +182,41 @@
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NSelectItem>
-            <uix:NCheckState DisplayName="Check App State 'Payment'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1233" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Payment mode&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">"Payment mode is selected successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NCheckState DisplayName="Check App State 'Payment'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,442" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Cash on Delivery is selected" str_in_expectedStep="Cash on Delivery should be selected" str_in_stepDescription="Cash on Delivery is selected or Not" str_in_stepName="Payment Method Selection">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Cash on Delivery is selected" str_in_expectedStep="Cash on Delivery should be selected" str_in_stepDescription="Cash on Delivery is selected or Not" str_in_stepName="Payment Method Selection">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">int_reportid</CSharpValue>
@@ -196,16 +228,35 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Passed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">"passed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,442" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Cash on Delivery is not Selected" str_in_expectedStep="Cash on Delivery should be selected" str_in_stepDescription="Cash on Delivery is selected or Not" str_in_stepName="Payment Method Selection">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Cash on Delivery is not Selected" str_in_expectedStep="Cash on Delivery should be selected" str_in_stepDescription="Cash on Delivery is selected or Not" str_in_stepName="Payment Method Selection">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">int_reportid</CSharpValue>
@@ -217,6 +268,19 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Failed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">"Failed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
@@ -228,21 +292,52 @@
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="87427b1e-2262-46a9-a24c-dc1ac7af71dc" ContentHash="4jpHNzv3rkW7xslOTDlPXA" DesignTimeRectangle="1037, 513, 83, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Confirm ' tag='BUTTON' type='button' /&gt;" Guid="699169f9-33c3-4220-9c63-6b4df0e0cc35" InformativeScreenshot="c119bb6a8cd399b042dc61db466d2964.jpg" Reference="lcaYJExaA023vWQMuPxTTw/pwFQa0YmFkmh6M6OmvJHRA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Payment was successful'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1225" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot; Confirm button click&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">"Confirm button is clicked successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NCheckState DisplayName="Check App State 'Payment was successful'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,438" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="payment method selected" str_in_expectedStep="payment method selected" str_in_stepDescription="payment method selected" str_in_stepName="payment method selected">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="payment method selected" str_in_expectedStep="payment method selected" str_in_stepDescription="payment method selected" str_in_stepName="payment method selected">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">int_reportid</CSharpValue>
@@ -254,16 +349,35 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Passed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"passed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,438" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_actualStep="payment method not selected" str_in_expectedStep="payment method selected" str_in_stepDescription="payment method not selected" str_in_stepName="payment method not selected">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_actualStep="payment method not selected" str_in_expectedStep="payment method selected" str_in_stepDescription="payment method not selected" str_in_stepName="payment method not selected">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">int_reportid</CSharpValue>
@@ -275,23 +389,61 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Failed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">"Failed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="06a4e8ec-1aa2-46a8-8c5b-f315a3f9dd4d" ContentHash="DQzbGhADaE6bvjXuS5KvFg" CvElementArea="495, 512, 626, 60" CvType="InputBox" DesignTimeRectangle="513, 530, 590, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='help-block' tag='DIV' type='' aaname='Payment was successful' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Payment was successful' /&gt;" Guid="49684640-a204-47e9-9eb1-16cd9dea4c73" InformativeScreenshot="3e6d6e972c5d1d2418562366915120fe.jpg" Reference="lcaYJExaA023vWQMuPxTTw/V3DAOB_sVU2MBSKTUkmaSQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="06a4e8ec-1aa2-46a8-8c5b-f315a3f9dd4d" CvTextArea="496, 424, 112, 29" CvTextArgument="Payment" CvType="Text" DesignTimeRectangle="496, 418, 624, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='H3' class='' aaname='Payment' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Payment' /&gt;" Guid="f950ac11-ebc9-4eb1-84ca-7ebff6d22ff2" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f5adfcf-5bcc-495e-905f-0d1a866a7182" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="4a145176-0960-4214-9b73-469005a05e67" ContentHash="9a47lzzvpkOxcSwyscxSZQ" DesignTimeRectangle="1037, 579, 83, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Confirm ' tag='BUTTON' type='button' /&gt;" Guid="7ea9f57e-f322-4c3e-9c75-ed43040d2ff8" InformativeScreenshot="15a585b8c4a652eed795e6dac8c558c2.jpg" Reference="lcaYJExaA023vWQMuPxTTw/xZcGzScYzk685dv4yP3CXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message for &quot; Confirm button click&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"Confirm button is clicked successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

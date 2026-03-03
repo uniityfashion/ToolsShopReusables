@@ -139,7 +139,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Billing" sap:VirtualizedContainerService.HintSize="689,4624" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Billing" sap:VirtualizedContainerService.HintSize="594.6666666666666,1245.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="BillingTestId" />
       <Variable x:TypeArguments="sd:DataTable" Name="BillingData" />
@@ -149,7 +149,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ar:startTest sap:VirtualizedContainerService.HintSize="488,279" sap2010:WorkflowViewState.IdRef="startTest_1" str_in_testName="Billing Test">
+    <ar:startTest sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="startTest_1" str_in_testName="Billing Test">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <ar:startTest.int_in_ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">ReportId</CSharpValue>
@@ -166,25 +172,31 @@
         </OutArgument>
       </ar:startTest.str_out_TestId>
     </ar:startTest>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="488,227" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1">
       <ui:ReadRange.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">BillingData</CSharpReference>
         </OutArgument>
       </ui:ReadRange.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <ui:ReadRange.WorkbookPath>
         <InArgument x:TypeArguments="x:String">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">ExcelPath</CSharpValue>
         </InArgument>
       </ui:ReadRange.WorkbookPath>
     </ui:ReadRange>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Checkout - Practice Software Testing -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,4095" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Checkout - Practice Software Testing -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1108" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,3901" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,913.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="streetName" />
               <Variable x:TypeArguments="x:String" Name="cityName" />
@@ -197,15 +209,21 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'New York USA'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1213" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'New York USA'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="'Billing' text has appeared" str_in_expectedStep="'Billing' text should be appeared" str_in_stepDescription="Billing page loaded" str_in_stepName="Billing">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="'Billing' text has appeared" str_in_expectedStep="'Billing' text should be appeared" str_in_stepDescription="Billing page loaded" str_in_stepName="Billing">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">ReportId</CSharpValue>
@@ -217,16 +235,35 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Passed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">"passed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_actualStep="'Billing' text didn't appear" str_in_expectedStep="'Billing' text should be appeared" str_in_stepDescription="'Billing' text didn't appear" str_in_stepName="Billing">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_actualStep="'Billing' text didn't appear" str_in_expectedStep="'Billing' text should be appeared" str_in_stepDescription="'Billing' text didn't appear" str_in_stepName="Billing">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">ReportId</CSharpValue>
@@ -238,13 +275,32 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Failed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">"Failed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="ba6a1a71-1123-480a-96bd-e942edf8b2eb" ContentHash="40BiUOhlY0WGW1E97-z4yw" DesignTimeRectangle="416, 360, 535, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='street' aaname='Street' /&gt;" Guid="f5cc86a8-cbbe-479d-9880-a570da989955" InformativeScreenshot="e91f58500811b50ee5429c5c3850b81a.jpg" Reference="NdnDWv5lYU2XxRkubzPcng/_WWxELzgBkCOb75AVHyXFw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'New York USA'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into street" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NTypeInto.EmptyFieldMode>
                 <InArgument x:TypeArguments="uix:NEmptyFieldMode">
                   <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
@@ -258,8 +314,27 @@
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">streetName</CSharpValue>
                 </InArgument>
               </uix:NTypeInto.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'New York'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;street entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"Street is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into city name" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NTypeInto.EmptyFieldMode>
                 <InArgument x:TypeArguments="uix:NEmptyFieldMode">
                   <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
@@ -273,8 +348,27 @@
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">cityName</CSharpValue>
                 </InArgument>
               </uix:NTypeInto.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'New York(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;City entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">"city name is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into state name" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NTypeInto.EmptyFieldMode>
                 <InArgument x:TypeArguments="uix:NEmptyFieldMode">
                   <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
@@ -288,8 +382,27 @@
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">stateName</CSharpValue>
                 </InArgument>
               </uix:NTypeInto.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'IN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;state entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">"state name is entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'IN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NTypeInto.EmptyFieldMode>
                 <InArgument x:TypeArguments="uix:NEmptyFieldMode">
                   <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
@@ -303,8 +416,27 @@
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">countryName</CSharpValue>
                 </InArgument>
               </uix:NTypeInto.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '100012'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;country  name&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"Country name entered successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into postal code" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NTypeInto.EmptyFieldMode>
                 <InArgument x:TypeArguments="uix:NEmptyFieldMode">
                   <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
@@ -318,21 +450,65 @@
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">postalCode</CSharpValue>
                 </InArgument>
               </uix:NTypeInto.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed to checkout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;Postal code entry&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"Postal code is entered succcessfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed to checkout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="fe5d2a07-64ae-4647-b996-7b4f7764f312" ContentHash="nX2WvEPtRkapqYo8qJYqzw" DesignTimeRectangle="779, 630, 172, 38" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl innertext='Proceed to checkout ' visibleinnertext='Proceed to checkout' /&gt;" Guid="01213040-cbd5-416a-b82a-d136d1c43d45" InformativeScreenshot="6d29c1d5ed05f4300c7bcda8c6b885a8.jpg" Reference="NdnDWv5lYU2XxRkubzPcng/nJssRoqER0e4zzS37CWYQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Payment'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1204" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
+            <ui:LogMessage DisplayName="Log Message for &quot;proceed checkout button&quot;" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">"Proceed to checkout button is clicked successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NCheckState DisplayName="Check App State 'Payment'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="334ce6d7-0c24-4c26-8067-acd3ab9c347b" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Payment" str_in_expectedStep="Payment text should be visible to user" str_in_stepDescription="Billing information" str_in_stepName="Billing">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Payment" str_in_expectedStep="Payment text should be visible to user" str_in_stepDescription="Billing information" str_in_stepName="Billing">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">ReportId</CSharpValue>
@@ -344,16 +520,35 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Passed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">"passed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,434" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,173.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Enter valid address" str_in_expectedStep="An error should be displayed to user" str_in_stepDescription="Billing failed due to invalid address" str_in_stepName="Billing">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Enter valid address" str_in_expectedStep="An error should be displayed to user" str_in_stepDescription="Billing failed due to invalid address" str_in_stepName="Billing">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">ReportId</CSharpValue>
@@ -365,11 +560,30 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
+                  <ui:LogMessage DisplayName="Log Message for &quot;Failed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"Failed step"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/checkout" CVScreenId="2655efb6-4184-4b0e-a964-82c65ec448d3" ContentHash="9MAohjoW40ecNAdWDLZdVg" DesignTimeRectangle="417, 435, 534, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Payment' innertext='Payment' visibleinnertext='Payment' /&gt;" Guid="4ec9a069-1f9a-44e4-bafc-3653e9427327" InformativeScreenshot="095a4f63f08bdb42e876cfd38e02d656.jpg" Reference="NdnDWv5lYU2XxRkubzPcng/NfT_I13U0k-0hJwmQD5RDg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
           </Sequence>
         </ActivityAction>

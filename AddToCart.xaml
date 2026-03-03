@@ -124,9 +124,10 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddToCart" sap:VirtualizedContainerService.HintSize="852,2328" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddToCart" sap:VirtualizedContainerService.HintSize="594.6666666666666,513.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="addtocart_testid" />
     </Sequence.Variables>
@@ -135,7 +136,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ar:startTest sap:VirtualizedContainerService.HintSize="488,279" sap2010:WorkflowViewState.IdRef="startTest_1" str_in_testName="add to cart test start here">
+    <ar:startTest sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="startTest_1" str_in_testName="add to cart test start here">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <ar:startTest.int_in_ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">int_reportid</CSharpValue>
@@ -152,32 +159,57 @@
         </OutArgument>
       </ar:startTest.str_out_TestId>
     </ar:startTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Pliers - Practice Software Testing - Too" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2026" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="788d8641-d3b6-4aa8-8212-c761de389c87" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Pliers - Practice Software Testing - Too" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,433.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="788d8641-d3b6-4aa8-8212-c761de389c87" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1832" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,238.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="788d8641-d3b6-4aa8-8212-c761de389c87" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="788d8641-d3b6-4aa8-8212-c761de389c87" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/product/01KJS12SR3YCMVPZDKC2F5JD6J" CVScreenId="e3d4901c-4f92-422e-9669-5c743b5d69fb" ContentHash="Tjf5K1GGo0mztbnE-s0h9A" CvElementArea="812, 745, 134, 41" CvTextArea="852, 758, 82, 15" CvTextArgument="Add to cart" CvType="Button" DesignTimeRectangle="813, 747, 133, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btn-add-to-cart' tag='BUTTON' /&gt;" Guid="219570ae-332f-4c6a-9985-658458581453" InformativeScreenshot="0dd0d39bfb4737322ae367a618e2302f.jpg" Reference="_7Gc8tkhV06jhEAy12RkWA/M49-qlv3K0SHhKKywxbWHw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Pliers - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'svg'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1574" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="788d8641-d3b6-4aa8-8212-c761de389c87" Version="V5">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">"Add to cart button is clicked successfully"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <uix:NCheckState DisplayName="Check App State 'svg'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="788d8641-d3b6-4aa8-8212-c761de389c87" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,617" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="items added to cart  sucessfully" str_in_expectedStep="items added to cart  sucessfully" str_in_stepDescription="items added to cart  sucessfully" str_in_stepName="items added to cart  sucessfully">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="items added to cart  sucessfully" str_in_expectedStep="items added to cart  sucessfully" str_in_stepDescription="items added to cart  sucessfully" str_in_stepName="items added to cart  sucessfully">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">int_reportid</CSharpValue>
@@ -189,23 +221,35 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message for &quot;Passed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"add to cart sucessfull"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                   </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,617" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="items added to cart  unsucessfully" str_in_expectedStep="items added to cart  unsucessfully" str_in_stepDescription="items added to cart  unsucessfully" str_in_stepName="items added to cart  unsucessfully">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,61.333333333333336" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="items added to cart  unsucessfully" str_in_expectedStep="items added to cart  unsucessfully" str_in_stepDescription="items added to cart  unsucessfully" str_in_stepName="items added to cart  unsucessfully">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">int_reportid</CSharpValue>
@@ -217,18 +261,30 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message for &quot;failed step&quot;" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"add to cart unsucessfull "</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                   </ui:LogMessage>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="practicesoftwaretesting.com/product/01KJS12SR3YCMVPZDKC2F5JD6J" CVScreenId="2ebd20c4-463c-4834-b5d5-f1e915d24491" ContentHash="5aK-FHYSLEa1GpKg3l8HsA" CvElementArea="1340, 180, 43, 30" CvType="Icon" DesignTimeRectangle="1342, 192, 20, 16" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='img' tag='svg' /&gt;" Guid="f4f1279f-a7b2-4f30-81a6-1dbf62889ed6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEaSURBVEhLtZQ9C4JQFED7H6ENRV9LYHO1RFJTSUtCBUEFZYFbTlLNEVREQZB9/M8bTzDM+7wq1XBwuL5zno+HsbiYgG+4CDl4CnlfYs6LTUWBXr8PcqOOJBReoZd3wLKub6aahkR+hP4Ch46qfsSCeJRlJCUD1VoNSSjuwwmSkoGCVEQSitv5BM+0hMS+AcbxeEAiirumIzEZWK6WSBLEoztAct/AbD5HgiC22w20xBS6VdxA1JvEGI3H9tqkmABVSMFayNoxbiDqTdJ1HZLpDPIwuAHnJintNppFhRtgmKYJ+/3O/n1QsF+Md22oQKlcAcNYoOPg4V0bKvAryAA7ArZD9owyc0MGqGOgZm7IALVLauaGDPyCvwde2fx4xzgvYJsAAAAASUVORK5CYII=" InformativeScreenshot="8e62a384ae7d7c3f2d621a8d817d51ce.jpg" Reference="_7Gc8tkhV06jhEAy12RkWA/wwmjlKb0zk28i6YoL2GXxg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Pliers - Practice Software Testing - Toolshop - v5.0' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
           </Sequence>
         </ActivityAction>
